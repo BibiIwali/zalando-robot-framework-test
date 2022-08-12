@@ -49,4 +49,13 @@ Email And Password Warning Should Appear
     Page Should Contain Element         ${EMAIL_WARNING}   
     Wait Until Element Is Visible       ${PASSWORD_WARNING}
     Page Should Contain Element         ${PASSWORD_WARNING} 
-    
+
+Mouse Over Get Look Tab
+    [Arguments]                         ${tab name}
+    Wait Until Element Is Visible       ${GET LOOK}
+    Mouse Over Element                  ${GET LOOK}
+
+Click Get Look Tab
+    Wait Until Element Is Visible       ${GET LOOK}
+    Click Element                       ${GET LOOK}
+    Page Should Contain Element         ${GET LOOK}
